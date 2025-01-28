@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Elijah Adepoju | Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+
+    <link rel="icon" type="image/jpg" href="../static/assets/ElijahPassport.jpg">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            scroll-behavior: smooth; /* Smooth scrolling */
+        }
+        .logo-name {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700; /* Use bold if available */
+  font-size: 24px; /* Adjust size as needed */
+}
+
+        .hero {
+            position: relative;
+            color: #fff;
+            /* background: url('https://placehold.co/1920x1080') no-repeat center center/cover; */
+            height: 80vh; /* Increased height */
+            transition: height 0.5s ease-in-out; /* Smooth transition */
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .hero .container {
+            position: relative;
+            z-index: 1;
+        }
+        .hero .lead {
+            font-size: 1.5rem;
+        }
+        section {
+            padding: 80px 0; /* Add padding to sections */
+            min-height: 70vh; /* Ensure minimum height for sections */
+        }
+        @media (max-width: 768px) {
+            .hero {
+                height: 60vh; /* Responsive height for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body class="bg-dark text-dark" ">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                
+                <b class="logo-name">Elijah Adepoju</b>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1MInQihsshujOk4N7lMF_R_-LSZ6fWe9_/view?usp=drive_link">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center mt-5" id="hero">
+        <div class="container text-center">
+            <h1 class="display-4">Hi, I'm a Python developer</h1>
+            <p class="lead">I build efficient and scalable backend systems using python
+            </p>
+            <a class="btn btn-primary" href="#contact">Get in Touch</a>
+        </div>
+    </section>
+    
+   
+    
+    <!-- About Section -->
+    <section class="py-5 bg-white" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center">
+                    <img src="../static/assets/ElijahPassport.jpg" alt="Elijah Passport" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-md-6 mt-4 mt-md-0">
+                    <h2 class="display-4">About Me</h2>
+                    <p>I am a passionate Python developer with over 3 years of experience in building robust backend systems. I have a strong background in computer science and a deep understanding of various programming paradigms and technologies.</p>
+                    <p>Throughout my career, I have developed expertise in designing scalable architectures, optimizing performance, and ensuring high-quality code through rigorous testing and continuous integration practices. My proficiency in Python has allowed me to leverage its extensive libraries and frameworks, such as Django and Flask, to create efficient and maintainable applications.</p>
+                    <p>I enjoy solving complex problems and am always eager to learn new skills and technologies to improve my craft. This drive for innovation has led me to explore emerging trends in software development, including machine learning, cloud computing, and DevOps. I believe that staying updated with the latest advancements is crucial for delivering cutting-edge solutions that meet the evolving needs of users.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section class="py-5 bg-light" id="projects">
+        <div class="container">
+            <h2 class="display-4 text-center">Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://placehold.co/300x200" class="card-img-top" alt="Screenshot of Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">Description of Project 1. This project involves building a scalable web application using Django and PostgreSQL.</p>
+                            <a href="#" class="btn btn-link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://placehold.co/300x200" class="card-img-top" alt="Screenshot of Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">Description of Project 2. This project involves creating a data analysis pipeline using Pandas and Jupyter Notebook.</p>
+                            <a href="#" class="btn btn-link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://placehold.co/300x200" class="card-img-top" alt="Screenshot of Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">Description of Project 3. This project involves developing a machine learning model using Scikit-learn and TensorFlow.</p>
+                            <a href="#" class="btn btn-link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section class="py-5 bg-white" id="skills">
+        <div class="container">
+            <h2 class="display-4 text-center">Skills</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <i class="fab fa-python fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">Python</h5>
+                            <p class="card-text">Expert in Python programming with experience in various frameworks and libraries.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <i class="fas fa-database fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">Databases</h5>
+                            <p class="card-text">Proficient in SQL and NoSQL databases including PostgreSQL, MySQL, and MongoDB.</p>
+                        </div>
+                    </div>
+                </div>
+
+              
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <i class="fas fa-server fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">Backend Development</h5>
+                            <p class="card-text">Experienced in building scalable backend systems using Flask and Django.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">Data Analysis</h5>
+                            <p class="card-text">Skilled in data analysis and visualization using Pandas, NumPy, and Matplotlib.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        <!-- Contact Section -->
+        <section class="py-5 bg-light" id="contact">
+            <div class="container">
+                <h2 class="display-4 text-center mb-5">Contact</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <form action="https://api.web3forms.com/submit" method="POST" class="bg-white p-5 rounded shadow">
+                            <input type="hidden" name="access_key" value="eabf152f-d67a-42e9-9ffa-a0e400814f1e">
+                            <div class="form-group mb-4">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Footer -->
+        <footer class="bg-dark text-white py-4">
+            <div class="container text-center">
+                <p class="mb-0">&copy; <span id="current-year"></span> Elijah Adepoju. All rights reserved.</p>
+                <div class="mt-2">
+                    <a href="#" class="text-white mr-3"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ElijahAdepoju001" class="text-white mr-3"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            // Toggle mobile menu
+            document.querySelector('.navbar-toggler').addEventListener('click', function() {
+                document.querySelector('.navbar-collapse').classList.toggle('show');
+            });
+    
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a.nav-link').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        </script>
+
+        // footer data
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const yearSpan = document.getElementById('current-year');
+                const currentYear = new Date().getFullYear();
+                yearSpan.textContent = currentYear;
+            });
+        </script>
+        
+    </body>
+    </html>
+    
